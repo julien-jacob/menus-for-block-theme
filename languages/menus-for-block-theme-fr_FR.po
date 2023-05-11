@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Menus for Block Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 01:46+0000\n"
-"PO-Revision-Date: 2023-04-04 16:59+0000\n"
+"PO-Revision-Date: 2023-04-04 20:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: Français\n"
 "Language: fr_FR\n"
@@ -18,10 +18,11 @@ msgstr ""
 #: includes/admin.php:101
 msgid "Add classic menus for block theme (Appearance > Menus)"
 msgstr ""
-"Ajouter les menus classiques pour les thèmes basés sur les blocs (Apparence> "
-"Menus)"
+"Ajouter les menus classiques pour les thèmes basés sur les blocs (Apparence >"
+" Menus)"
 
 #. Description of the plugin
+#, fuzzy
 #| msgid ""
 #| "Add menus to theme supports. Display the customizer in admin menu. "
 #| "Disable files editor for plugins and themes."
@@ -29,9 +30,9 @@ msgid ""
 "Add classic menus to Block Themes. Display the customizer in admin menu. "
 "Disable files editor for plugins and themes."
 msgstr ""
-"Ajouter les menus classiques pour les thèmes basés sur les blocs. Afficher "
-"\"Personnaliser\" dans le menu d'administration. Désactiver l'éditeur de "
-"fichiers pour les extensions et les thèmes."
+"Supporter les menus dans le thème. Affichez \"Personnaliser\" dans le menu "
+"d'administration. Désactiver l'éditeur de fichiers pour les plugins et les "
+"thèmes."
 
 #: includes/admin.php:107 includes/admin.php:111
 msgid "Customizer"
@@ -52,13 +53,17 @@ msgstr ""
 "Personnaliser)"
 
 #: includes/admin.php:121 includes/admin.php:125
+#, fuzzy
 #| msgid "Files editor"
 msgid "File editor"
-msgstr "Éditeur de fichiers"
+msgstr "Éditeur de fichier"
 
 #. Author URI of the plugin
 msgid "https://la-webeuse.com/"
 msgstr ""
+"Ajouter les menus classiques pour les thèmes basés sur les blocs. Afficher "
+"\"Personnaliser\" dans le menu d'administration. Désactiver l'éditeur de "
+"fichiers pour les extensions et les thèmes."
 
 #. URI of the plugin
 msgid "https://la-webeuse.com/menus-for-block-theme/"
