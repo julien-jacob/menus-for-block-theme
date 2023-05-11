@@ -129,7 +129,7 @@ function mfbt_settings() {
 								<span><?php _e( 'Reusable Blocks', 'menus-for-block-theme' ); ?></span>
 							</legend>
 							<label for="mfbt_show_reusable_blocks">
-								<input type="checkbox" id="mfbt_show_reusable_blocks" name="mfbt_show_reusable_blocks" value="1" <?php checked( 1, get_option( 'mfbt_show_reusable_blocks' ), true ); ?> /> <?php _e( 'Display shortcut to the reusable blocks management screen (Appearance > Reusable Blocks) ', 'menus-for-block-theme' ); ?>
+								<input type="checkbox" id="mfbt_show_reusable_blocks" name="mfbt_show_reusable_blocks" value="1" <?php checked( 1, get_option( 'mfbt_show_reusable_blocks' ), true ); ?> /> <?php _e( 'Display shortcut to the reusable blocks management screen (Appearance > Reusable Blocks)', 'menus-for-block-theme' ); ?>
 							</label>
 						</fieldset>
 					</td>

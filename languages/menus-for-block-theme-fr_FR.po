@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Menus for Block Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 01:46+0000\n"
-"PO-Revision-Date: 2023-04-04 20:00+0000\n"
+"PO-Revision-Date: 2023-05-11 23:36+0000\n"
 "Last-Translator: \n"
 "Language-Team: Français\n"
 "Language: fr_FR\n"
@@ -15,30 +15,17 @@ msgstr ""
 "X-Loco-Version: 2.6.4; wp-6.2\n"
 "X-Domain: menus-for-block-theme"
 
-#: includes/admin.php:101
+#: includes/admin.php:105
 msgid "Add classic menus for block theme (Appearance > Menus)"
 msgstr ""
 "Ajouter les menus classiques pour les thèmes basés sur les blocs (Apparence >"
 " Menus)"
 
-#. Description of the plugin
-#, fuzzy
-#| msgid ""
-#| "Add menus to theme supports. Display the customizer in admin menu. "
-#| "Disable files editor for plugins and themes."
-msgid ""
-"Add classic menus to Block Themes. Display the customizer in admin menu. "
-"Disable files editor for plugins and themes."
-msgstr ""
-"Supporter les menus dans le thème. Affichez \"Personnaliser\" dans le menu "
-"d'administration. Désactiver l'éditeur de fichiers pour les plugins et les "
-"thèmes."
-
-#: includes/admin.php:107 includes/admin.php:111
+#: includes/admin.php:111 includes/admin.php:115
 msgid "Customizer"
 msgstr "Personnaliser"
 
-#: includes/admin.php:128
+#: includes/admin.php:188
 msgid ""
 "Disable file editor for plugins and themes (Tools > Theme / Plugin File "
 "Editor)"
@@ -46,17 +33,54 @@ msgstr ""
 "Désactiver l'éditeur de fichiers pour les extensions et les thèmes (Outils > "
 "Éditeur des fichiers des thèmes / extensions)"
 
-#: includes/admin.php:114
+#: includes/admin.php:146
+msgid "Display shortcut to menu list (Appearance > Navigation menus)"
+msgstr ""
+"Ajouter le raccourci vers la liste des menus (Apparence > Liste des menus)"
+
+#: includes/admin.php:174
+msgid "Display shortcut to template parts list (Appearance > Template Parts)"
+msgstr ""
+"Ajouter le raccourci vers la liste des éléments de modèles (Apparence > "
+"Élément de modèles)"
+
+#: includes/admin.php:160
+msgid "Display shortcut to templates list (Appearance > Templates)"
+msgstr "Ajouter le raccourci vers la liste des modèles (Apparence > Modèles)"
+
+#: includes/admin.php:132
+#| msgid ""
+#| "Display shortcut to the reusable blocks management screen (Appearance > "
+#| "Reusable Blocks) "
+msgid ""
+"Display shortcut to the reusable blocks management screen (Appearance > "
+"Reusable Blocks)"
+msgstr ""
+"Ajouter le raccourci vers l'écran de gestion des blocs réutilisables "
+"(Apparence > Blocs réutilisables)"
+
+#: includes/admin.php:118
 msgid "Display the customizer in admin menu (Appearance > Customize)"
 msgstr ""
 "Afficher \"Personnaliser\" dans le menu d'administration (Apparence > "
 "Personnaliser)"
 
-#: includes/admin.php:121 includes/admin.php:125
-#, fuzzy
+#. Description of the plugin
+msgid ""
+"Enable shortcuts to manage block-based themes: re-enable classic menus and "
+"customizer tabs, add shortcuts to reusable blocks, templates, template parts "
+"and menu list. Disable file editor for plugins and themes."
+msgstr ""
+"Active les raccourcis pour gérer vos thèmes basés sur les blocks : réactive "
+"les menus classiques et le personnaliseur, ajoute des raccourcis vers les "
+"blocs réutilisables, les modèles, les éléments de modèles et la liste des "
+"menus. Supprime la possibilité d'éditer les fichiers des thèmes et des "
+"extensions. "
+
+#: includes/admin.php:181 includes/admin.php:185
 #| msgid "Files editor"
 msgid "File editor"
-msgstr "Éditeur de fichier"
+msgstr "Éditeur de fichiers"
 
 #. Author URI of the plugin
 msgid "https://la-webeuse.com/"
@@ -70,11 +94,11 @@ msgid "https://la-webeuse.com/menus-for-block-theme/"
 msgstr ""
 
 #. Author of the plugin
-msgid "Lycia Diaz"
+msgid "La Webeuse"
 msgstr ""
 
 #. Name of the plugin
-#: includes/admin.php:74 includes/admin.php:83
+#: includes/admin.php:78 includes/admin.php:87
 msgid "Menus for Block Theme"
 msgstr ""
 
@@ -86,14 +110,34 @@ msgstr "Menus for Block Theme : Réglages"
 msgid "MFBT Settings"
 msgstr "MFBT Réglages"
 
-#: includes/admin.php:75
+#: includes/admin.php:139 includes/admin.php:143 includes/main.php:126
+#: includes/main.php:127
+msgid "Navigation Menu"
+msgstr "Liste des menus"
+
+#: includes/admin.php:79
 msgid "Not available on WordPress Multisite"
 msgstr "Non disponible sur WordPress multisite"
 
-#: includes/admin.php:58
+#: includes/admin.php:125 includes/admin.php:129 includes/main.php:107
+#: includes/main.php:108
+msgid "Reusable Blocks"
+msgstr "Blocs réutilisables"
+
+#: includes/admin.php:62
 msgid "Settings"
 msgstr "Réglages"
 
-#: includes/admin.php:94 includes/admin.php:98
+#: includes/admin.php:98 includes/admin.php:102
 msgid "Support menus"
 msgstr "Supporter les menus"
+
+#: includes/admin.php:167 includes/admin.php:171 includes/main.php:164
+#: includes/main.php:165
+msgid "Template Parts"
+msgstr "Élément de modèles"
+
+#: includes/admin.php:153 includes/admin.php:157 includes/main.php:145
+#: includes/main.php:146
+msgid "Templates"
+msgstr "Modèles"
