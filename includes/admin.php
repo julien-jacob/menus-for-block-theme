@@ -35,6 +35,10 @@ function mfbt_register_settings() {
 	register_setting( 'mfbt_settings', 'mfbt_add_theme_support_menu' );
 	register_setting( 'mfbt_settings', 'mfbt_show_customizer' );
 	register_setting( 'mfbt_settings', 'mfbt_disable_files_editor' );
+	register_setting( 'mfbt_settings', 'mfbt_show_reusable_blocks' );
+	register_setting( 'mfbt_settings', 'mfbt_show_navigation_menu' );
+	register_setting( 'mfbt_settings', 'mfbt_show_templates' );
+	register_setting( 'mfbt_settings', 'mfbt_show_template_parts' );
 
 }
 
@@ -126,6 +130,62 @@ function mfbt_settings() {
 							</legend>
 							<label for="mfbt_disable_files_editor">
 								<input type="checkbox" id="mfbt_disable_files_editor" name="mfbt_disable_files_editor" value="1" <?php checked( 1, get_option( 'mfbt_disable_files_editor' ), true ); ?> /> <?php _e( 'Disable file editor for plugins and themes (Tools > Theme / Plugin File Editor)', 'menus-for-block-theme' ); ?>
+							</label>
+						</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><?php _e( 'Reusable Blocks', 'menus-for-block-theme' ); ?></th>
+					<td>
+						<fieldset>
+							<legend class="screen-reader-text">
+								<span><?php _e( 'Reusable Blocks', 'menus-for-block-theme' ); ?></span>
+							</legend>
+							<label for="mfbt_show_reusable_blocks">
+								<input type="checkbox" id="mfbt_show_reusable_blocks" name="mfbt_show_reusable_blocks" value="1" <?php checked( 1, get_option( 'mfbt_show_reusable_blocks' ), true ); ?> /> <?php _e( 'Display Reusable Blocks', 'menus-for-block-theme' ); ?>
+							</label>
+						</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><?php _e( 'Navigation Menu', 'menus-for-block-theme' ); ?></th>
+					<td>
+						<fieldset>
+							<legend class="screen-reader-text">
+								<span><?php _e( 'Navigation Menu', 'menus-for-block-theme' ); ?></span>
+							</legend>
+							<label for="mfbt_show_navigation_menu">
+								<input type="checkbox" id="mfbt_show_navigation_menu" name="mfbt_show_navigation_menu" value="1" <?php checked( 1, get_option( 'mfbt_show_navigation_menu' ), true ); ?> /> <?php _e( 'Display Navigation Menu', 'menus-for-block-theme' ); ?>
+							</label>
+						</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><?php _e( 'Templates', 'menus-for-block-theme' ); ?></th>
+					<td>
+						<fieldset>
+							<legend class="screen-reader-text">
+								<span><?php _e( 'Templates', 'menus-for-block-theme' ); ?></span>
+							</legend>
+							<label for="mfbt_show_templates">
+								<input type="checkbox" id="mfbt_show_templates" name="mfbt_show_templates" value="1" <?php checked( 1, get_option( 'mfbt_show_templates' ), true ); ?> /> <?php _e( 'Display Templates', 'menus-for-block-theme' ); ?>
+							</label>
+						</fieldset>
+					</td>
+				</tr>
+
+				<tr>
+					<th scope="row"><?php _e( 'Template Parts', 'menus-for-block-theme' ); ?></th>
+					<td>
+						<fieldset>
+							<legend class="screen-reader-text">
+								<span><?php _e( 'Template Parts', 'menus-for-block-theme' ); ?></span>
+							</legend>
+							<label for="mfbt_show_template_parts">
+								<input type="checkbox" id="mfbt_show_template_parts" name="mfbt_show_template_parts" value="1" <?php checked( 1, get_option( 'mfbt_show_template_parts' ), true ); ?> /> <?php _e( 'Display Template Parts', 'menus-for-block-theme' ); ?>
 							</label>
 						</fieldset>
 					</td>
