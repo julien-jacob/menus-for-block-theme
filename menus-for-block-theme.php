@@ -2,11 +2,11 @@
 /*
 Plugin Name: Menus for Block Theme
 Plugin URI: https://la-webeuse.com/menus-for-block-theme/
-Description: Add classic menus to Block Themes. Display the customizer in admin menu. Disable files editor for plugins and themes.
+Description: Enable shortcuts to manage block-based themes: re-enable classic menus and customizer tabs, add shortcuts to reusable blocks, templates, template parts and menu list. Disable file editor for plugins and themes.
 Version: 1.0.0
 Text Domain: menus-for-block-theme
 Domain Path: /languages/
-Author: Lycia Diaz
+Author: La Webeuse
 Author URI: https://la-webeuse.com/
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

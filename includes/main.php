@@ -145,7 +145,7 @@ function mfbt_display_templates() {
 		__( 'Templates', 'menus-for-block-theme' ),
 		__( 'Templates', 'menus-for-block-theme' ),
 		'manage_options',
-		'site-editor.php?path=%2Fwp_template',
+		'site-editor.php?path=%2Fwp_template%2Fall',
 		'',
 		10
 	);
@@ -164,7 +164,7 @@ function mfbt_display_template_parts() {
 		__( 'Template Parts', 'menus-for-block-theme' ),
 		__( 'Template Parts', 'menus-for-block-theme' ),
 		'manage_options',
-		'site-editor.php?path=%2Fwp_template_part',
+		'site-editor.php?path=%2Fwp_template_part%2Fall',
 		'',
 		11
 	);
