@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Menus for Block Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 01:46+0000\n"
-"PO-Revision-Date: 2023-05-12 00:51+0000\n"
+"PO-Revision-Date: 2023-05-12 19:36+0000\n"
 "Last-Translator: \n"
 "Language-Team: Français\n"
 "Language: fr_FR\n"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Display shortcut to template parts list (Appearance > Template Parts)"
 msgstr ""
 "Ajouter le raccourci vers la liste des éléments de modèles (Apparence > "
-"Élément de modèles)"
+"Éléments de modèles)"
 
 #: includes/admin.php:160
 msgid "Display shortcut to templates list (Appearance > Templates)"
@@ -132,7 +132,7 @@ msgstr "Supporter les menus"
 #: includes/admin.php:167 includes/admin.php:171 includes/main.php:164
 #: includes/main.php:165
 msgid "Template Parts"
-msgstr "Élément de modèles"
+msgstr "Éléments de modèles"
 
 #: includes/admin.php:153 includes/admin.php:157 includes/main.php:145
 #: includes/main.php:146
