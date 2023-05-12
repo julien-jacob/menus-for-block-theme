@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Menus for Block Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-03 01:46+0000\n"
-"PO-Revision-Date: 2023-05-11 23:36+0000\n"
+"PO-Revision-Date: 2023-05-12 00:51+0000\n"
 "Last-Translator: \n"
 "Language-Team: Français\n"
 "Language: fr_FR\n"
@@ -85,9 +85,6 @@ msgstr "Éditeur de fichiers"
 #. Author URI of the plugin
 msgid "https://la-webeuse.com/"
 msgstr ""
-"Ajouter les menus classiques pour les thèmes basés sur les blocs. Afficher "
-"\"Personnaliser\" dans le menu d'administration. Désactiver l'éditeur de "
-"fichiers pour les extensions et les thèmes."
 
 #. URI of the plugin
 msgid "https://la-webeuse.com/menus-for-block-theme/"
