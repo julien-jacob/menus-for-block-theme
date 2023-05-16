@@ -52,15 +52,15 @@ _Tools -> Theme file editor_ and _Tools -> Plugin file editor_
 
 ### Settings page
 
-![Settings page](assets/screenshot-1.png "Settings page")
+![Settings page](assets/screenshot-1.PNG "Settings page")
 
 ### Add classic menus support
 
-![Add classic menus support](assets/screenshot-2.png "Add classic menus support")
+![Add classic menus support](assets/screenshot-2.PNG "Add classic menus support")
 
 ### Add Customizer support
 
-![Add Customizer support](assets/screenshot-3.png "Add Customizer support")
+![Add Customizer support](assets/screenshot-3.PNG "Add Customizer support")
 
 ### Disable Files Editor from admin
 
