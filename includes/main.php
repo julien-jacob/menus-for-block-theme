@@ -48,6 +48,20 @@ function mfbt_main() {
 
 
 /**
+ * Loads MFBT plugin's translated strings.
+ *
+ * @return void
+ */
+function mfbt_load_plugin_textdomain() {
+	load_plugin_textdomain(
+		'menus-for-block-theme',
+		false,
+		basename( dirname( __FILE__ ) ) . '/languages'
+	);
+}
+
+
+/**
  * Display Glogal styles in the admin area
  *
  * @return void

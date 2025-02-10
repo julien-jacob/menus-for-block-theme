@@ -18,13 +18,6 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 
-// Load plugin text domain
-load_plugin_textdomain(
-	'menus-for-block-theme',
-	false,
-	basename( dirname( __FILE__ ) ) . '/languages'
-);
-
 // Load require PHP files
 require_once plugin_dir_path( __FILE__ ) . 'includes/admin.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/main.php';
@@ -36,6 +29,7 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/main.php';
  */
 function mfbt_start() {
 
+	add_action( 'init', 'mfbt_load_plugin_textdomain' );
 	add_action( 'admin_menu', 'mfbt_create_menu' );
 	add_action( 'admin_init', 'mfbt_register_settings' );
 	add_action( 'init', 'mfbt_main' );
