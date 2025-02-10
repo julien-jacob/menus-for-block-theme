@@ -2,7 +2,7 @@
 /*
 Plugin Name: Menus for Block Theme
 Plugin URI: https://la-webeuse.com/menus-for-block-theme/
-Description: Enable shortcuts to manage block-based themes: re-enable classic menus and customizer tabs, add shortcuts to reusable blocks, templates, template parts and menu list. Disable file editor for plugins and themes.
+Description: Enable shortcuts to manage block-based themes: re-enable classic menus and customizer tabs, add shortcuts to reusable blocks, templates, patterns and menu list. Disable file editor for plugins and themes.
 Version: 1.0.0
 Text Domain: menus-for-block-theme
 Domain Path: /languages/
@@ -19,10 +19,10 @@ if ( ! defined( 'WPINC' ) ) {
 
 
 // Load plugin text domain
-load_plugin_textdomain( 
-	'menus-for-block-theme', 
-	false, 
-	basename( dirname( __FILE__ ) ) . '/languages' 
+load_plugin_textdomain(
+	'menus-for-block-theme',
+	false,
+	basename( dirname( __FILE__ ) ) . '/languages'
 );
 
 // Load require PHP files
@@ -37,7 +37,7 @@ require_once plugin_dir_path( __FILE__ ) . 'includes/main.php';
 function mfbt_start() {
 
 	add_action( 'admin_menu', 'mfbt_create_menu' );
-    add_action( 'admin_init', 'mfbt_register_settings' );
+	add_action( 'admin_init', 'mfbt_register_settings' );
 	add_action( 'init', 'mfbt_main' );
 	add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'mfbt_settings_link' );
 

@@ -16,7 +16,7 @@ function mfbt_create_menu() {
 	add_submenu_page(
 		'options-general.php',
 		__( 'Menus for Block Theme : Settings', 'menus-for-block-theme' ),
-		__( 'MFBT Settings', 'menus-for-block-theme'),
+		__( 'MFBT Settings', 'menus-for-block-theme' ),
 		'administrator',
 		'mfbt-settings',
 		'mfbt_settings'
@@ -164,14 +164,14 @@ function mfbt_settings() {
 				</tr>
 
 				<tr>
-					<th scope="row"><?php _e( 'Template Parts', 'menus-for-block-theme' ); ?></th>
+					<th scope="row"><?php _e( 'Patterns', 'menus-for-block-theme' ); ?></th>
 					<td>
 						<fieldset>
 							<legend class="screen-reader-text">
-								<span><?php _e( 'Template Parts', 'menus-for-block-theme' ); ?></span>
+								<span><?php _e( 'Patterns', 'menus-for-block-theme' ); ?></span>
 							</legend>
 							<label for="mfbt_show_template_parts">
-								<input type="checkbox" id="mfbt_show_template_parts" name="mfbt_show_template_parts" value="1" <?php checked( 1, get_option( 'mfbt_show_template_parts' ), true ); ?> /> <?php _e( 'Display shortcut to template parts list (Appearance > Template Parts)', 'menus-for-block-theme' ); ?>
+								<input type="checkbox" id="mfbt_show_template_parts" name="mfbt_show_template_parts" value="1" <?php checked( 1, get_option( 'mfbt_show_template_parts' ), true ); ?> /> <?php _e( 'Display shortcut to Patterns list (Appearance >  Patterns)', 'menus-for-block-theme' ); ?>
 							</label>
 						</fieldset>
 					</td>

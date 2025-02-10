@@ -145,7 +145,7 @@ function mfbt_display_templates() {
 		__( 'Templates', 'menus-for-block-theme' ),
 		__( 'Templates', 'menus-for-block-theme' ),
 		'manage_options',
-		'site-editor.php?path=%2Fwp_template%2Fall',
+		'site-editor.php?postType=wp_template',
 		'',
 		10
 	);
@@ -154,17 +154,17 @@ function mfbt_display_templates() {
 
 
 /**
- * Display Template Parts link in the admin area
+ * Display Patterns link in the admin area
  *
  * @return void
  */
 function mfbt_display_template_parts() {
 
 	add_theme_page(
-		__( 'Template Parts', 'menus-for-block-theme' ),
-		__( 'Template Parts', 'menus-for-block-theme' ),
+		__( 'Patterns', 'menus-for-block-theme' ),
+		__( 'Patterns', 'menus-for-block-theme' ),
 		'manage_options',
-		'site-editor.php?path=%2Fwp_template_part%2Fall',
+		'site-editor.php?postType=wp_block',
 		'',
 		11
 	);
