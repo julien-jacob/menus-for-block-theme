@@ -17,8 +17,8 @@ function mfbt_main() {
 		return;
 	}
 
-	if ( ! empty( get_option( 'mfbt_add_theme_support_menu' ) ) ) {
-		mfbt_add_theme_support_menus();
+	if ( ! empty( get_option( 'mfbt_add_global_styles' ) ) ) {
+		add_action( 'admin_head', 'mfbt_add_global_styles' );
 	}
 
 	if ( ! empty( get_option( 'mfbt_show_customizer' ) ) ) {
@@ -48,12 +48,21 @@ function mfbt_main() {
 
 
 /**
- * Add the value 'menus' to add_theme_support
+ * Display Glogal styles in the admin area
  *
  * @return void
  */
-function mfbt_add_theme_support_menus() {
-	add_theme_support( 'menus' );
+function mfbt_add_global_styles() {
+
+	add_theme_page(
+		__( 'Global styles', 'menus-for-block-theme' ),
+		__( 'Global styles', 'menus-for-block-theme' ),
+		'manage_options',
+		'site-editor.php?path=%2Fwp_global_styles',
+		'',
+		7
+	);
+
 }
 
 
@@ -76,17 +85,17 @@ function mfbt_display_customizer() {
 
 	global $submenu;
 
-	$customize_url = sanitize_url( 
-		add_query_arg( 
-			'return', 
-			urlencode( 
-				remove_query_arg( 
-					wp_removable_query_args(), 
-					wp_unslash( $_SERVER['REQUEST_URI'] ) 
+	$customize_url = sanitize_url(
+		add_query_arg(
+			'return',
+			urlencode(
+				remove_query_arg(
+					wp_removable_query_args(),
+					wp_unslash( $_SERVER['REQUEST_URI'] )
 				)
-			), 
-			'customize.php' 
-		) 
+			),
+			'customize.php'
+		)
 	);
 
 	$position = ( wp_is_block_theme() || current_theme_supports( 'block-template-parts' ) ) ? 7 : 6;
@@ -109,7 +118,7 @@ function mfbt_display_reusable_blocks() {
 		'manage_options',
 		'edit.php?post_type=wp_block',
 		'',
-		9
+		8
 	);
 
 }

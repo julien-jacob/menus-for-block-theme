@@ -32,7 +32,7 @@ function mfbt_create_menu() {
  */
 function mfbt_register_settings() {
 
-	register_setting( 'mfbt_settings', 'mfbt_add_theme_support_menu' );
+	register_setting( 'mfbt_settings', 'mfbt_add_global_styles' );
 	register_setting( 'mfbt_settings', 'mfbt_show_customizer' );
 	register_setting( 'mfbt_settings', 'mfbt_disable_files_editor' );
 	register_setting( 'mfbt_settings', 'mfbt_show_reusable_blocks' );
@@ -95,14 +95,14 @@ function mfbt_settings() {
 			<table class="form-table">
 
 				<tr>
-					<th scope="row"><?php _e( 'Support menus', 'menus-for-block-theme' ); ?></th>
+					<th scope="row"><?php _e( 'Global styles', 'menus-for-block-theme' ); ?></th>
 					<td>
 						<fieldset>
 							<legend class="screen-reader-text">
-								<span><?php _e( 'Support menus', 'menus-for-block-theme' ); ?></span>
+								<span><?php _e( 'Global styles', 'menus-for-block-theme' ); ?></span>
 							</legend>
-							<label for="mfbt_add_theme_support_menu">
-								<input type="checkbox" id="mfbt_add_theme_support_menu" name="mfbt_add_theme_support_menu" value="1" <?php checked( 1, get_option( 'mfbt_add_theme_support_menu' ), true ); ?> /> <?php _e( 'Add classic menus for block theme (Appearance > Menus)', 'menus-for-block-theme' ); ?></label>
+							<label for="mfbt_add_global_styles">
+								<input type="checkbox" id="mfbt_add_global_styles" name="mfbt_add_global_styles" value="1" <?php checked( 1, get_option( 'mfbt_add_global_styles' ), true ); ?> /> <?php _e( 'Add a shortcut link to edit global styles (Appearance > Global styles)', 'menus-for-block-theme' ); ?></label>
 						</fieldset>
 					</td>
 				</tr>
