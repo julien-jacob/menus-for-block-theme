@@ -29,8 +29,8 @@ function mfbt_main() {
 		mfbt_disallow_file_edit();
 	}
 
-	if ( ! empty( get_option( 'mfbt_show_reusable_blocks' ) ) ) {
-		add_action( 'admin_menu', 'mfbt_display_reusable_blocks' );
+	if ( ! empty( get_option( 'mfbt_show_my_patterns' ) ) ) {
+		add_action( 'admin_menu', 'mfbt_show_my_patterns' );
 	}
 
 	if ( ! empty( get_option( 'mfbt_show_navigation_menu' ) ) ) {
@@ -120,19 +120,21 @@ function mfbt_display_customizer() {
 
 
 /**
- * Display Reusable Blocks link in the admin area
+ * Display my patterns link in the admin area
  *
  * @return void
  */
-function mfbt_display_reusable_blocks() {
+function mfbt_show_my_patterns() {
+
+	add_theme_page( '', '', 'manage_options', '' );
 
 	add_theme_page(
-		__( 'Reusable Blocks', 'menus-for-block-theme' ),
-		__( 'Reusable Blocks', 'menus-for-block-theme' ),
+		__( 'My patterns', 'menus-for-block-theme' ),
+		__( 'My patterns', 'menus-for-block-theme' ),
 		'manage_options',
-		'edit.php?post_type=wp_block',
+		'site-editor.php?categoryId=my-patterns&postType=wp_block',
 		'',
-		8
+		10
 	);
 
 }
@@ -184,8 +186,8 @@ function mfbt_display_templates() {
 function mfbt_display_template_parts() {
 
 	add_theme_page(
-		__( 'Patterns', 'menus-for-block-theme' ),
-		__( 'Patterns', 'menus-for-block-theme' ),
+		__( 'All patterns', 'menus-for-block-theme' ),
+		__( 'All patterns', 'menus-for-block-theme' ),
 		'manage_options',
 		'site-editor.php?postType=wp_block',
 		'',

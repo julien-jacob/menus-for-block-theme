@@ -35,7 +35,7 @@ function mfbt_register_settings() {
 	register_setting( 'mfbt_settings', 'mfbt_add_global_styles' );
 	register_setting( 'mfbt_settings', 'mfbt_show_customizer' );
 	register_setting( 'mfbt_settings', 'mfbt_disable_files_editor' );
-	register_setting( 'mfbt_settings', 'mfbt_show_reusable_blocks' );
+	register_setting( 'mfbt_settings', 'mfbt_show_my_patterns' );
 	register_setting( 'mfbt_settings', 'mfbt_show_navigation_menu' );
 	register_setting( 'mfbt_settings', 'mfbt_show_templates' );
 	register_setting( 'mfbt_settings', 'mfbt_show_template_parts' );
@@ -122,14 +122,14 @@ function mfbt_settings() {
 				</tr>
 
 				<tr>
-					<th scope="row"><?php _e( 'Reusable Blocks', 'menus-for-block-theme' ); ?></th>
+					<th scope="row"><?php _e( 'My patterns', 'menus-for-block-theme' ); ?></th>
 					<td>
 						<fieldset>
 							<legend class="screen-reader-text">
-								<span><?php _e( 'Reusable Blocks', 'menus-for-block-theme' ); ?></span>
+								<span><?php _e( 'My patterns', 'menus-for-block-theme' ); ?></span>
 							</legend>
-							<label for="mfbt_show_reusable_blocks">
-								<input type="checkbox" id="mfbt_show_reusable_blocks" name="mfbt_show_reusable_blocks" value="1" <?php checked( 1, get_option( 'mfbt_show_reusable_blocks' ), true ); ?> /> <?php _e( 'Display shortcut to the reusable blocks management screen (Appearance > Reusable Blocks)', 'menus-for-block-theme' ); ?>
+							<label for="mfbt_show_my_patterns">
+								<input type="checkbox" id="mfbt_show_my_patterns" name="mfbt_show_my_patterns" value="1" <?php checked( 1, get_option( 'mfbt_show_my_patterns' ), true ); ?> /> <?php _e( 'Display shortcut to the My patterns management screen (Appearance > My patterns)', 'menus-for-block-theme' ); ?>
 							</label>
 						</fieldset>
 					</td>
@@ -164,14 +164,14 @@ function mfbt_settings() {
 				</tr>
 
 				<tr>
-					<th scope="row"><?php _e( 'Patterns', 'menus-for-block-theme' ); ?></th>
+					<th scope="row"><?php _e( 'All patterns', 'menus-for-block-theme' ); ?></th>
 					<td>
 						<fieldset>
 							<legend class="screen-reader-text">
-								<span><?php _e( 'Patterns', 'menus-for-block-theme' ); ?></span>
+								<span><?php _e( 'All patterns', 'menus-for-block-theme' ); ?></span>
 							</legend>
 							<label for="mfbt_show_template_parts">
-								<input type="checkbox" id="mfbt_show_template_parts" name="mfbt_show_template_parts" value="1" <?php checked( 1, get_option( 'mfbt_show_template_parts' ), true ); ?> /> <?php _e( 'Display shortcut to Patterns list (Appearance >  Patterns)', 'menus-for-block-theme' ); ?>
+								<input type="checkbox" id="mfbt_show_template_parts" name="mfbt_show_template_parts" value="1" <?php checked( 1, get_option( 'mfbt_show_template_parts' ), true ); ?> /> <?php _e( 'Display shortcut to all patterns list (Appearance >  All patterns)', 'menus-for-block-theme' ); ?>
 							</label>
 						</fieldset>
 					</td>
