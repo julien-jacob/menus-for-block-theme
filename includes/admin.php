@@ -136,14 +136,14 @@ function mfbt_settings() {
 				</tr>
 
 				<tr>
-					<th scope="row"><?php _e( 'Navigation Menu', 'menus-for-block-theme' ); ?></th>
+					<th scope="row"><?php _e( 'Nav Menu', 'menus-for-block-theme' ); ?></th>
 					<td>
 						<fieldset>
 							<legend class="screen-reader-text">
-								<span><?php _e( 'Navigation Menu', 'menus-for-block-theme' ); ?></span>
+								<span><?php _e( 'Nav Menu', 'menus-for-block-theme' ); ?></span>
 							</legend>
 							<label for="mfbt_show_navigation_menu">
-								<input type="checkbox" id="mfbt_show_navigation_menu" name="mfbt_show_navigation_menu" value="1" <?php checked( 1, get_option( 'mfbt_show_navigation_menu' ), true ); ?> /> <?php _e( 'Display shortcut to menu list (Appearance > Navigation menus)', 'menus-for-block-theme' ); ?>
+								<input type="checkbox" id="mfbt_show_navigation_menu" name="mfbt_show_navigation_menu" value="1" <?php checked( 1, get_option( 'mfbt_show_navigation_menu' ), true ); ?> /> <?php _e( 'Display shortcut to the navigation management screen in the site editor (Appearance > Nav menus)', 'menus-for-block-theme' ); ?>
 							</label>
 						</fieldset>
 					</td>

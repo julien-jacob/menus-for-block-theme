@@ -146,10 +146,10 @@ function mfbt_display_reusable_blocks() {
 function mfbt_display_navigation_menu() {
 
 	add_theme_page(
-		__( 'Navigation Menu', 'menus-for-block-theme' ),
-		__( 'Navigation Menu', 'menus-for-block-theme' ),
+		__( 'Nav Menu', 'menus-for-block-theme' ),
+		__( 'Nav Menu', 'menus-for-block-theme' ),
 		'manage_options',
-		'edit.php?post_type=wp_navigation',
+		'site-editor.php?postType=wp_navigation',
 		'',
 		9
 	);
